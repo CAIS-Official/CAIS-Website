@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services"
+  },
+  "hero": {
+    "title": "Code and AI Solutions",
+    "subtitle": "We build ultra-fast, secure, and bilingual static websites.",
+    "cta": "View Services"
+  },
+  "why": {
+    "title": "Why choose us?",
+    "item1_title": "Extreme Performance",
+    "item1_desc": "Astro outputs pure HTML. Zero unnecessary JavaScript.",
+    "item2_title": "Native Bilingual",
+    "item2_desc": "Your site ready for English and Spanish clients.",
+    "item3_title": "Static Security",
+    "item3_desc": "No databases, no plugins. Just secure code."
+  }
+}

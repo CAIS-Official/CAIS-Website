@@ -1,0 +1,20 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios"
+  },
+  "hero": {
+    "title": "Code and AI Solutions",
+    "subtitle": "Construimos sitios web estáticos ultrarrápidos, seguros y bilingües.",
+    "cta": "Ver Servicios"
+  },
+  "why": {
+    "title": "¿Por qué elegirnos?",
+    "item1_title": "Rendimiento Extremo",
+    "item1_desc": "Astro genera HTML puro. Cero JavaScript innecesario.",
+    "item2_title": "Bilingüe Nativo",
+    "item2_desc": "Tu web lista para clientes en inglés y español.",
+    "item3_title": "Seguridad Estática",
+    "item3_desc": "Sin bases de datos, sin plugins. Solo código seguro."
+  }
+}
