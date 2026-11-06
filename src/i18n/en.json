@@ -1,20 +1,42 @@
 {
   "nav": {
-    "home": "Home",
-    "services": "Services"
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
   },
   "hero": {
     "title": "Code and AI Solutions",
-    "subtitle": "We build ultra-fast, secure, and bilingual static websites.",
-    "cta": "View Services"
+    "subtitle": "We build ultra-fast, secure, and bilingual static websites to take your business to the next level.",
+    "cta": "View Services",
+    "tech_text": "Powered by"
   },
   "why": {
-    "title": "Why choose us?",
+    "title": "Why choose CAIS?",
     "item1_title": "Extreme Performance",
-    "item1_desc": "Astro outputs pure HTML. Zero unnecessary JavaScript.",
+    "item1_desc": "We use Astro to output pure HTML. Zero unnecessary JavaScript, instant loading.",
     "item2_title": "Native Bilingual",
-    "item2_desc": "Your site ready for English and Spanish clients.",
+    "item2_desc": "Your site ready for English and Spanish clients from day one.",
     "item3_title": "Static Security",
-    "item3_desc": "No databases, no plugins. Just secure code."
+    "item3_desc": "No databases, no plugins. Just secure, hack-proof code."
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Tailored solutions for your growth stage.",
+    "landing_title": "Landing Page",
+    "landing_desc": "A single page focused on fast conversion.",
+    "landing_price": "$150 - $250 USD",
+    "commercial_title": "Basic Commercial",
+    "commercial_desc": "Up to 5 pages for local businesses.",
+    "commercial_price": "$400 - $600 USD",
+    "business_title": "Business Full",
+    "business_desc": "Static site with multiple pages and CMS.",
+    "business_price": "$800 - $1,200 USD",
+    "btn_hire": "Get a quote"
+  },
+    "portfolio": {
+    "title": "Real Projects, Real Code",
+    "desc1": "We don't just build pretty pages, we build real solutions. We've worked with brands like <strong>XAM Goth Apparel</strong>, developing their store and web presence from scratch.",
+    "desc2": "Explore our repositories to see the quality of our code, our architecture, and how we use the latest technologies.",
+    "btn_github": "View Repositories"
   }
 }

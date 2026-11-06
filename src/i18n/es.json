@@ -1,20 +1,42 @@
 {
   "nav": {
-    "home": "Inicio",
-    "services": "Servicios"
+    "about": "Nosotros",
+    "services": "Servicios",
+    "contact": "Contacto"
   },
   "hero": {
     "title": "Code and AI Solutions",
-    "subtitle": "Construimos sitios web estáticos ultrarrápidos, seguros y bilingües.",
-    "cta": "Ver Servicios"
+    "subtitle": "Construimos sitios web estáticos ultrarrápidos, seguros y bilingües para llevar tu negocio al siguiente nivel.",
+    "cta": "Ver Servicios",
+    "tech_text": "Potenciado por"
   },
   "why": {
-    "title": "¿Por qué elegirnos?",
+    "title": "¿Por qué elegir CAIS?",
     "item1_title": "Rendimiento Extremo",
-    "item1_desc": "Astro genera HTML puro. Cero JavaScript innecesario.",
+    "item1_desc": "Usamos Astro para generar HTML puro. Cero JavaScript innecesario, carga instantánea.",
     "item2_title": "Bilingüe Nativo",
-    "item2_desc": "Tu web lista para clientes en inglés y español.",
+    "item2_desc": "Tu web lista para clientes en inglés y español desde el primer día.",
     "item3_title": "Seguridad Estática",
-    "item3_desc": "Sin bases de datos, sin plugins. Solo código seguro."
+    "item3_desc": "Sin bases de datos, sin plugins. Solo código seguro y a prueba de hackeos."
+  },
+  "services": {
+    "title": "Nuestros Servicios",
+    "subtitle": "Soluciones a la medida de tu etapa de crecimiento.",
+    "landing_title": "Landing Page",
+    "landing_desc": "Una sola página enfocada en conversión rápida.",
+    "landing_price": "$150 - $250 USD",
+    "commercial_title": "Comercial Básico",
+    "commercial_desc": "Hasta 5 páginas para negocios locales.",
+    "commercial_price": "$400 - $600 USD",
+    "business_title": "Business Full",
+    "business_desc": "Web estática con múltiples páginas y CMS.",
+    "business_price": "$800 - $1,200 USD",
+    "btn_hire": "Cotizar este plan"
+  },
+   "portfolio": {
+    "title": "Proyectos Reales, Código Real",
+    "desc1": "No solo creamos páginas bonitas, construimos soluciones reales. Hemos trabajado con marcas como <strong>XAM Goth Apparel</strong>, desarrollando su tienda y presencia web desde cero.",
+    "desc2": "Explora nuestros repositorios para ver la calidad de nuestro código, nuestra arquitectura y cómo usamos las últimas tecnologías.",
+    "btn_github": "Ver Repositorios"
   }
 }

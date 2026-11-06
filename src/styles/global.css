@@ -1,0 +1,85 @@
+/* src/styles/global.css */
+
+/* Paleta de colores basada en el logo */
+:root {
+  --cais-bg: #050B14;        
+  --cais-primary: #38BDF8;   
+  --cais-text: #E2E8F0;      
+}
+
+/* Le damos el color al HTML, no al BODY */
+html {
+  background-color: var(--cais-bg);
+}
+
+body {
+  background-color: transparent;
+  color: var(--cais-text);
+}
+
+.btn-primary {
+  background-color: var(--cais-primary);
+  border-color: var(--cais-primary);
+  color: #000;
+  font-weight: 600;
+}
+
+.btn-primary:hover {
+  background-color: #0284c7;
+  border-color: #0284c7;
+}
+
+.card {
+  background-color: #0A1425;
+  border: 1px solid #1E293B;
+}
+
+.navbar {
+  background-color: rgba(5, 11, 20, 0.85); 
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); 
+  border-bottom: 1px solid #1E293B;
+}
+
+/* HERO MEJORADO */
+.hero-wrapper {
+  position: relative;
+  isolation: isolate;
+  background-color: #050B14;
+  background-image:
+    linear-gradient(rgba(56, 189, 248, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(56, 189, 248, 0.08) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: center top;
+  overflow: hidden;
+}
+
+.hero-glow {
+  position: absolute;
+  top: -200px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 800px;
+  height: 800px;
+  background: radial-gradient(
+    circle,
+    rgba(56, 189, 248, 0.3) 0%,
+    rgba(5, 11, 20, 0) 60%
+  );
+  pointer-events: none;
+  z-index: -1;
+}
+
+.text-gradient {
+  display: inline-block; /* Por si Chrome sigue terco con el degradado */
+  background: linear-gradient(135deg, #ffffff 30%, #38BDF8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}

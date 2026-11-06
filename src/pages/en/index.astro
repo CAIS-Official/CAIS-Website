@@ -1,36 +1,132 @@
 ---
-// src/pages/en/index.astro
 import Base from '../../layouts/Base.astro';
 const t = await import('../../i18n/en.json');
 ---
 
-<Base locale="en" title="Home">
-  <section class="py-5 text-center bg-light">
-    <div class="container">
-      <h1 class="display-4 fw-bold">{t.hero.title}</h1>
-      <p class="lead text-muted">{t.hero.subtitle}</p>
-      <a href="/en/services" class="btn btn-primary btn-lg mt-3">{t.hero.cta}</a>
+<Base locale="en" title="Web Solutions">
+  <!-- HERO -->
+  <section class="hero-wrapper py-5 d-flex align-items-center" style="min-height: 85vh;">
+    
+    <!-- El div que invoca el resplandor azul -->
+    <div class="hero-glow"></div>
+    
+    <div class="container hero-content text-center">
+      
+      <!-- El h1 que invoca el degradado -->
+      <h1 class="display-3 fw-bold mb-4 text-gradient">{t.hero.title}</h1>
+      
+      <p class="lead fw-medium mb-5 mx-auto" style="max-width: 700px; font-size: 1.25rem; color: #cbd5e1;">
+        {t.hero.subtitle}
+      </p>
+      
+      <a href="#services" class="btn btn-primary btn-lg px-5 py-3 rounded-pill mb-5">
+        {t.hero.cta} <i class="bi bi-arrow-down ms-1"></i>
+      </a>
+
+      <div class="mt-4">
+        <p class="text-secondary small text-uppercase fw-bold mb-3" style="letter-spacing: 3px;">
+          {t.hero.tech_text}
+        </p>
+        <div class="d-flex justify-content-center gap-4 fs-2 text-primary">
+          <i class="bi bi-code-slash" title="Astro"></i>
+          <i class="bi bi-bootstrap" title="Bootstrap"></i>
+          <i class="bi bi-github" title="GitHub"></i>
+          <i class="bi bi-robot" title="IA"></i>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="py-5">
+  <section id="why" class="py-5">
     <div class="container">
-      <h2 class="text-center mb-5">{t.why.title}</h2>
+      <h2 class="text-center mb-5 text-white">{t.why.title}</h2>
       <div class="row g-4">
         <div class="col-md-4 text-center">
           <i class="bi bi-speedometer2 fs-1 text-primary"></i>
-          <h4 class="mt-3">{t.why.item1_title}</h4>
-          <p class="text-muted">{t.why.item1_desc}</p>
+          <h4 class="mt-3 text-white">{t.why.item1_title}</h4>
+          <p class="text-secondary">{t.why.item1_desc}</p>
         </div>
         <div class="col-md-4 text-center">
           <i class="bi bi-translate fs-1 text-primary"></i>
-          <h4 class="mt-3">{t.why.item2_title}</h4>
-          <p class="text-muted">{t.why.item2_desc}</p>
+          <h4 class="mt-3 text-white">{t.why.item2_title}</h4>
+          <p class="text-secondary">{t.why.item2_desc}</p>
         </div>
         <div class="col-md-4 text-center">
           <i class="bi bi-shield-check fs-1 text-primary"></i>
-          <h4 class="mt-3">{t.why.item3_title}</h4>
-          <p class="text-muted">{t.why.item3_desc}</p>
+          <h4 class="mt-3 text-white">{t.why.item3_title}</h4>
+          <p class="text-secondary">{t.why.item3_desc}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="py-5 border-top border-dark">
+    <div class="container py-4">
+      <div class="row align-items-center g-5">
+        
+        <div class="col-lg-6 text-center">
+          <img src="/portafolio.svg" alt="CAIS Portfolio" class="img-fluid" style="max-height: 400px; filter: drop-shadow(0px 10px 30px rgba(56, 189, 248, 0.2));">
+        </div>
+
+        <div class="col-lg-6">
+          <h2 class="text-white mb-4">{t.portfolio.title}</h2>
+          <p class="text-secondary mb-4" style="font-size: 1.1rem;">
+            <Fragment set:html={t.portfolio.desc1} />
+          </p>
+          <p class="text-secondary mb-5" style="font-size: 1.1rem;">
+            {t.portfolio.desc2}
+          </p>
+          
+          <a href="https://github.com/orgs/CAIS-Official/repositories" target="_blank" rel="noopener" class="btn btn-outline-light btn-lg px-4 py-3 rounded-pill d-inline-flex align-items-center gap-2">
+            <i class="bi bi-github fs-5"></i> {t.portfolio.btn_github}
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="py-5 border-top border-dark">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="text-white">{t.services.title}</h2>
+        <p class="text-secondary">{t.services.subtitle}</p>
+      </div>
+      
+      <div class="row g-4 justify-content-center">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm text-center p-3">
+            <div class="card-body">
+              <h4 class="card-title text-white">{t.services.landing_title}</h4>
+              <p class="card-text text-secondary">{t.services.landing_desc}</p>
+              <h3 class="text-primary my-4">{t.services.landing_price}</h3>
+              <a href="https://wa.me/61411918190?text=Hey!%20I%20am%20interested%20in%20the%20Landing%20Page%20plan" target="_blank" rel="noopener" class="btn btn-outline-light w-100">{t.services.btn_hire}</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm text-center p-3 border-primary">
+            <div class="card-body">
+              <span class="badge bg-primary text-dark mb-2">Popular</span>
+              <h4 class="card-title text-white">{t.services.commercial_title}</h4>
+              <p class="card-text text-secondary">{t.services.commercial_desc}</p>
+              <h3 class="text-primary my-4">{t.services.commercial_price}</h3>
+              <a href="https://wa.me/61411918190?text=Hey!%20I%20am%20interested%20in%20the%20Basic%20Commercial%20plan" target="_blank" rel="noopener" class="btn btn-primary w-100">{t.services.btn_hire}</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm text-center p-3">
+            <div class="card-body">
+              <h4 class="card-title text-white">{t.services.business_title}</h4>
+              <p class="card-text text-secondary">{t.services.business_desc}</p>
+              <h3 class="text-primary my-4">{t.services.business_price}</h3>
+              <a href="https://wa.me/61411918190?text=Hey!%20I%20am%20interested%20in%20the%20Business%20Full%20plan" target="_blank" rel="noopener" class="btn btn-outline-light w-100">{t.services.btn_hire}</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
