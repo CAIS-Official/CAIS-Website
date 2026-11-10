@@ -1,14 +1,16 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://cais-official.github.io', // Ajusta cuando tengas el repo
-  // base: '/nombre-repo', // Descomenta si NO usas dominio propio ni repo .github.io
+  // Organizacion nombre
+  site: 'https://CAIS-Official.github.io',
+  // nombre del repositorio
+  base: '/CAIS-Website', 
   i18n: {
-    defaultLocale: 'es',
+    defaultLocale: 'en',
     locales: ['es', 'en'],
     routing: {
       prefixDefaultLocale: true,
-      redirectToDefaultLocale: true, // Redirige / -> /es/
+      redirectToDefaultLocale: true,
     },
   },
 });
