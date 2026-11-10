@@ -1,16 +1,55 @@
 ---
+// src/pages/index.astro
+import '../styles/global.css'; // Reutilizamos tus estilos globales
 ---
 
+<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Redirecting... | CAIS</title>
+  
+  <!-- Redirección instantánea (o con un pequeño retraso si quieres que se vea la página) -->
+  <meta http-equiv="refresh" content="0;url=/en/" />
+  
+  <!-- Estilos para que se vea como tu web -->
+  <style>
+    body {
+      background-color: #050B14;
+      color: #E2E8F0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: system-ui, -apple-system, sans-serif;
+      text-align: center;
+    }
+    .loader {
+      width: 50px;
+      height: 50px;
+      border: 5px solid rgba(56, 189, 248, 0.2);
+      border-top-color: #38BDF8;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    a {
+      color: #38BDF8;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="loader"></div>
+  <h1>Redirigiendo...</h1>
+  <p>Si no eres redirigido automáticamente, <a href="/en/">haz clic aquí</a>.</p>
+</body>
 </html>
