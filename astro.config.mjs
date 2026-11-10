@@ -2,7 +2,7 @@ import { defineConfig } from 'astro/config';
 
 export default defineConfig({
   site: 'https://CAIS-Official.github.io',
-  base: '/CAIS-Website/', 
+  base: '/studio/', 
   i18n: {
     defaultLocale: 'en', 
     locales: ['en', 'es'], 
