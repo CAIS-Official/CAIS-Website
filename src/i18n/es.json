@@ -1,6 +1,6 @@
 {
   "nav": {
-    "about": "Nosotros",
+    "portfolio": "Portafolio",
     "services": "Servicios",
     "contact": "Contacto"
   },
@@ -38,5 +38,23 @@
     "desc1": "No solo creamos páginas bonitas, construimos soluciones reales. Hemos trabajado con marcas como <strong>XAM Goth Apparel</strong>, desarrollando su tienda y presencia web desde cero.",
     "desc2": "Explora nuestros repositorios para ver la calidad de nuestro código, nuestra arquitectura y cómo usamos las últimas tecnologías.",
     "btn_github": "Ver Repositorios"
+  },
+  "process": {
+    "title": "Cómo Trabajamos",
+    "subtitle": "Un proceso claro, transparente y sin sorpresas.",
+    "step1_title": "1. Descubrimiento",
+    "step1_desc": "Analizamos tu negocio, tus objetivos y definimos la estructura perfecta para tu sitio web.",
+    "step2_title": "2. Diseño",
+    "step2_desc": "Creamos un prototipo visual adaptado a tu marca. No escribimos una línea de código hasta que lo apruebes.",
+    "step3_title": "3. Desarrollo",
+    "step3_desc": "Construimos tu web con tecnología de punta, optimizada para velocidad. Aquí integramos sistemas de IA si tu proyecto lo requiere.",
+    "step4_title": "4. Lanzamiento",
+    "step4_desc": "Hacemos las pruebas finales, conectamos tu dominio y lanzamos tu web al mundo. Te entregamos el control total."
+  },
+    "contact": {
+    "title": "¿Listo para despegar?",
+    "subtitle": "Cuéntanos tu idea y te ayudaremos a construir la presencia digital que tu negocio merece. Respondemos en menos de 24 horas.",
+    "btn_email": "Enviar Correo",
+    "btn_whatsapp": "Escribir por WhatsApp"
   }
 }

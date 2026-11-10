@@ -1,6 +1,6 @@
 {
-  "nav": {
-    "about": "About",
+    "nav": {
+    "portfolio": "Portfolio",
     "services": "Services",
     "contact": "Contact"
   },
@@ -38,5 +38,23 @@
     "desc1": "We don't just build pretty pages, we build real solutions. We've worked with brands like <strong>XAM Goth Apparel</strong>, developing their store and web presence from scratch.",
     "desc2": "Explore our repositories to see the quality of our code, our architecture, and how we use the latest technologies.",
     "btn_github": "View Repositories"
+  },
+    "process": {
+    "title": "How We Work",
+    "subtitle": "A clear, transparent process with no surprises.",
+    "step1_title": "1. Discovery",
+    "step1_desc": "We analyze your business, goals, and define the perfect structure for your website.",
+    "step2_title": "2. Design",
+    "step2_desc": "We create a visual prototype tailored to your brand. No code is written until you approve it.",
+    "step3_title": "3. Development",
+    "step3_desc": "We build your site with cutting-edge tech, optimized for speed. We integrate AI systems here if your project requires it.",
+    "step4_title": "4. Launch",
+    "step4_desc": "We run final tests, connect your domain, and launch your site to the world. We hand you full control."
+  },
+   "contact": {
+    "title": "Ready for takeoff?",
+    "subtitle": "Tell us your idea and we will help you build the digital presence your business deserves. We reply in less than 24 hours.",
+    "btn_email": "Send Email",
+    "btn_whatsapp": "Chat on WhatsApp"
   }
 }

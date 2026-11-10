@@ -36,8 +36,10 @@ const currentPath = Astro.url.pathname.replace(`/${locale}`, '');
         <span style="margin-top: 4px;">CAIS</span>
       </a>
       <div class="navbar-nav ms-auto align-items-center">
-        <a class="nav-link" href="#why">{t.nav.about}</a>
+        <a class="nav-link" href="#portfolio">{t.nav.portfolio}</a>
         <a class="nav-link" href="#services">{t.nav.services}</a>
+        <a class="nav-link" href="#contact">{t.nav.contact}</a> <!-- Si no lo tenías, agrégalo -->
+        
         <!-- Botón de cambio de idioma -->
         <a class="nav-link text-primary ms-3 fw-bold" href={`/${otherLang}${currentPath}`}>
           {otherLang.toUpperCase()}
@@ -49,7 +51,7 @@ const currentPath = Astro.url.pathname.replace(`/${locale}`, '');
   <slot />
 
   <!-- Footer -->
-  <footer class="text-center py-4 mt-5 border-top border-dark">
+  <footer class="text-center py-4 border-top border-dark">
     <div class="container">
       <a href="https://github.com/orgs/CAIS-Official/repositories" class="text-white me-3" target="_blank" rel="noopener">
         <i class="bi bi-github fs-4"></i>

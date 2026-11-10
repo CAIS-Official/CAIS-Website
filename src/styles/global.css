@@ -1,5 +1,19 @@
 /* src/styles/global.css */
 
+/* Fondo de la sección de Contacto */
+.contact-section {
+  background: radial-gradient(circle at center 40%, rgba(56, 189, 248, 0.15) 0%, rgba(5, 11, 20, 0) 60%);
+  background-color: transparent;
+}
+
+/* Hover para los enlaces del navbar */
+.navbar-nav .nav-link {
+  transition: color 0.3s ease;
+}
+.navbar-nav .nav-link:hover {
+  color: var(--cais-primary) !important;
+}
+
 /* Paleta de colores basada en el logo */
 :root {
   --cais-bg: #050B14;        
@@ -29,9 +43,31 @@ body {
   border-color: #0284c7;
 }
 
+/* --- ESTILOS DE LAS TARJETAS (HOVER DINÁMICO) --- */
 .card {
   background-color: #0A1425;
-  border: 1px solid #1E293B;
+  border: 1px solid #1E293B; /* Borde oscuro por defecto */
+  transition: all 0.3s ease-in-out; /* Animación suave */
+}
+
+/* Cuando el mouse está encima de la tarjeta */
+.card:hover {
+  border-color: var(--cais-primary); /* Borde celeste */
+  transform: translateY(-5px); /* Se eleva un poquito (efecto 3D) */
+  box-shadow: 0 10px 30px rgba(56, 189, 248, 0.15); /* Sombra celeste brillante */
+}
+
+/* El botón dentro de la tarjeta por defecto */
+.card .btn {
+  transition: all 0.3s ease-in-out;
+}
+
+/* Cuando el mouse está encima de la TARJETA, el BOTÓN también cambia */
+.card:hover .btn-outline-light {
+  background-color: var(--cais-primary);
+  border-color: var(--cais-primary);
+  color: #000 !important; /* Texto oscuro para que contraste */
+  font-weight: 600;
 }
 
 .navbar {
@@ -82,4 +118,58 @@ body {
 .hero-content {
   position: relative;
   z-index: 1;
+}
+
+/* LÍNEA DE TIEMPO (PROCESO) */
+.process-step {
+  position: relative;
+  text-align: center;
+  /* Eliminamos el z-index: 1 de aquí para que no afecte al contenedor entero */
+}
+
+/* El circulito con el número */
+.process-icon {
+  width: 80px;
+  height: 80px;
+  background-color: #0A1425;
+  border: 2px solid var(--cais-primary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px auto;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--cais-primary);
+  position: relative;
+  z-index: 2; /* El círculo siempre estará por encima de la línea */
+  transition: all 0.3s ease;
+}
+
+.process-step:hover .process-icon {
+  background-color: var(--cais-primary);
+  color: #000;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+}
+
+/* La línea horizontal que conecta los pasos */
+@media (min-width: 768px) {
+  .process-step::before {
+    content: '';
+    position: absolute;
+    top: 40px; /* Justo a la mitad del circulito */
+    
+    /* Ajustamos la posición para que la línea nazca del centro del círculo anterior y muera en el actual */
+    left: -50%;
+    width: 100%;
+    
+    height: 2px;
+    background-color: #1E293B;
+    z-index: 1; /* La línea se queda detrás de los círculos */
+  }
+  
+  /* Ocultar la línea en el primer paso */
+  .process-step:first-child::before {
+    display: none;
+  }
 }
