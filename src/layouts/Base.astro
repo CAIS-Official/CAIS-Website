@@ -36,23 +36,36 @@ const languageUrl = `${base}${otherLang}/${currentPath}`;
   
 </head>
 <body>
+  
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container py-2">
-      <a class="navbar-brand d-flex align-items-center fw-bold" href={`${import.meta.env.BASE_URL}${locale}/`}>
-        <img src={`${import.meta.env.BASE_URL}logo.webp`} alt="CAIS Logo" class="me-2" style="height: 40px; width: auto;">
+      
+      <!-- Logo -->
+      <a class="navbar-brand d-flex align-items-center fw-bold" href={`${base}${locale}/`}>
+        <img src={`${base}logo.webp`} alt="CAIS Logo" class="me-2" style="height: 40px; width: auto;">
         <span style="margin-top: 4px;">CAIS</span>
       </a>
-      <div class="navbar-nav ms-auto align-items-center">
-        <a class="nav-link" href="#portfolio">{t.nav.portfolio}</a>
-        <a class="nav-link" href="#services">{t.nav.services}</a>
-        <a class="nav-link" href="#contact">{t.nav.contact}</a> <!-- Si no lo tenías, agrégalo -->
-        
-        <!-- Botón de cambio de idioma -->
-        <a class="nav-link text-primary ms-3 fw-bold" href={languageUrl}>
-          {otherLang.toUpperCase()}
-        </a>
+
+      <!-- Botón Hamburguesa (Solo se ve en celular) -->
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Contenido del menú -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="navbar-nav ms-auto align-items-center text-center pt-3 pt-lg-0">
+          <a class="nav-link fs-5 fs-lg-6 mb-2 mb-lg-0" href="#portfolio">{t.nav.portfolio}</a>
+          <a class="nav-link fs-5 fs-lg-6 mb-2 mb-lg-0" href="#services">{t.nav.services}</a>
+          <a class="nav-link fs-5 fs-lg-6 mb-2 mb-lg-0" href="#contact">{t.nav.contact}</a>
+          
+          <!-- Botón de cambio de idioma -->
+          <a class="nav-link text-primary fw-bold fs-5 fs-lg-6 ms-lg-3 mb-2 mb-lg-0" href={languageUrl}>
+            {otherLang.toUpperCase()}
+          </a>
+        </div>
       </div>
+
     </div>
   </nav>
 
